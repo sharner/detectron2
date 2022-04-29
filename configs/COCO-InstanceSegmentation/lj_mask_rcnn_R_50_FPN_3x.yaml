@@ -1,0 +1,17 @@
+_BASE_: "../Base-RCNN-FPN.yaml"
+MODEL:
+  WEIGHTS: "detectron2://ImageNetPretrained/MSRA/R-50.pkl"
+  MASK_ON: True
+  RESNETS:
+    DEPTH: 50
+  ROI_HEADS:
+    BATCH_SIZE_PER_IMAGE: 512
+    NUM_CLASSES: 1
+SOLVER:
+  STEPS: (210000, 250000)
+  MAX_ITER: 270000
+DATASETS:
+  TRAIN: ("lj_train",)
+  TEST: ("lj_val",)
+DATALOADER:
+  NUM_WORKERS: 2
