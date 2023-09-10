@@ -1,16 +1,32 @@
-jupyterlab==3.0.16
-pandas==1.2.4
-pillow==8.2.0
-pyarrow==4.0.1
-pycocotools==2.0.2
-requests==2.25.1
-tqdm==4.61.1
-urllib3==1.26.5
-wheel==0.36.2
-tabulate==0.8.9
-opencv-python==4.5.5.64
-pyyaml==5.1
-cloudpickle==2.0.0
-omegaconf==2.1.2
-tensorboard==2.8.0
+# jupyterlab==3.0.16
+# pandas==1.2.4
+# pillow==8.2.0
+# pyarrow==4.0.1
+# pycocotools==2.0.2
+# requests==2.25.1
+# tqdm==4.61.1
+# urllib3==1.26.5
+# wheel==0.36.2
+# tabulate==0.8.9
+# opencv-python==4.5.5.64
+# pyyaml==5.1
+# cloudpickle==2.0.0
+# omegaconf==2.1.2
+# tensorboard==2.8.0
+
+jupyterlab
+pandas
+pillow
+pyarrow
+pycocotools
+requests
+tqdm
+urllib3
+wheel
+tabulate
+opencv-python
+pyyaml
+cloudpickle
+omegaconf
+tensorboard
 git+https://github.com/facebookresearch/fvcore.git

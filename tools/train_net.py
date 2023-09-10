@@ -124,8 +124,8 @@ def setup(args):
 
 def main(args):
     cfg = setup(args)
-    register_coco_instances("lj_train", {}, "/data/ODSeg/feather/train_d2.json", "/data/ODSeg/feather/train_image")
-    register_coco_instances("lj_val", {}, "/data/ODSeg/feather/validation_d2.json", "/data/ODSeg/feather/validation_image")
+    register_coco_instances("lj_train", {}, "/data/ODSeg/feather/train.json", "/data/ODSeg/feather/train_image")
+    register_coco_instances("lj_val", {}, "/data/ODSeg/feather/validation.json", "/data/ODSeg/feather/validation_image")
     if args.eval_only:
         model = Trainer.build_model(cfg)
         DetectionCheckpointer(model, save_dir=cfg.OUTPUT_DIR).resume_or_load(

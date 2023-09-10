@@ -42,6 +42,7 @@ d2_bash() {
   echo "Starting lj-dev-container-gpu-d2:${CONT_VERSION}"
   docker run ${GPU_FLAGS} \
     --mount type=bind,source="${LAYERJOT_HOME}",target=/layerjot \
+    --mount type=bind,source="/layerjot/tb1/detectron2",target=/detectron2 \
     --mount type=bind,source="/data",target=/data \
     --shm-size 8G \
     --rm ${NETWORK} -it lj-dev-container-gpu-d2:${CONT_VERSION} bash	
